@@ -69,11 +69,14 @@
         <div class="title m-b-md">
         </div>
         <br>
-        <img src="data:image/png;base64,{{ base64_encode(SimpleSoftwareIO\QrCode\Facades\QrCode::size(500)
+        <img src="data:image/png;base64,{{ base64_encode(SimpleSoftwareIO\QrCode\Facades\QrCode::size(700)
             ->format('png')
-            ->merge(public_path('kredit.PNG'),.3, true)
+            ->merge(public_path('fee.png'), .28, true)
+            ->margin(5)
+            ->style('round')
+            ->errorCorrection('H')
             ->color(21,40,60)
-            ->generate('https://infopay.ofb.uz/cards') ) }}">
+            ->generate('https://infopay.ofb.uz/fees') ) }}">
 
         <div class="links">
         </div>
